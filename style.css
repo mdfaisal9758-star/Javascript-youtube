@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #9CD5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#card{
+    height: 450px;
+    width: 300px;
+    background-color:white;
+    border-radius: 15px;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    
+}
+#storyian{
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #290c0c;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y:hidden;
+}
+#storyian::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    height: 80px;
+    width: 80px;
+    border: 2px solid rgb(74, 10, 10);
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: 3px;
+}
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#full-screen{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
